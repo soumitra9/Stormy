@@ -5,8 +5,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FC9708"
-    android:padding="32dp"
+    android:background="@drawable/bg_gradient"
+    android:paddingLeft="32dp"
+    android:paddingRight="32dp"
+    android:paddingTop="32dp"
     tools:context="com.saumitra.stormy.MainActivity">
 
 
@@ -135,7 +137,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/linear_layout"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="50dp"
         android:gravity="center"
         android:text="Getting Current Weather....."
         android:textColor="#ffffff"
@@ -151,4 +153,37 @@
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linear_layout2"
+        android:layout_below="@+id/summaryLabel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/hourlyButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Hourly"
+            android:textColor="#ffffffff"
+            android:textSize="15sp"
+            android:background="#40ffffff"
+            android:layout_marginRight="2dp"/>
+
+        <Button
+            android:id="@+id/dailyButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="7 Day"
+            android:textColor="#ffffffff"
+            android:textSize="15sp"
+            android:background="#40ffffff"
+            android:layout_marginLeft="2dp"/>
+
+    </LinearLayout>
+
 </RelativeLayout>
